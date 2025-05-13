@@ -1,7 +1,7 @@
     
   <!-- JavaScript for WhatsApp Booking -->
   function bookEvent(eventDetails) {
-    const phone = "8940985978";
+    const phone = "7904201971";
     const message = `Hello, I want to book a spot for the following event:\n\n${eventDetails}\n\nPlease share further details.`;
     const encodedMessage = encodeURIComponent(message);
     const url = `https://wa.me/91${phone}?text=${encodedMessage}`;
@@ -19,7 +19,7 @@
     const packageName = document.getElementById("packageTitle").innerText;
   
     const text = `Hello, I would like to book the *${packageName}* package.%0A%0AName: ${name}%0AEvent Date: ${date}%0AMessage: ${message}`;
-    const url = `https://wa.me/918940985978?text=${encodeURIComponent(text)}`;
+    const url = `https://wa.me/917904201971?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
   }
   
