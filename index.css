@@ -1,0 +1,230 @@
+
+.navbar-brand img {
+  height: 40px;
+  
+}
+
+
+.brand-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2c3e50;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.custom-link {
+  font-weight: 500;
+  margin: 0 10px;
+  color: #555;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link.custom-link:hover,
+.navbar-nav .nav-link.custom-link:focus,
+.navbar-nav .nav-link.custom-link.active {
+  color: #007bff;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .brand-name {
+    font-size: 1.4rem;
+  }
+
+  .navbar-nav .nav-link.custom-link {
+    margin: 10px 0;
+  }
+}
+
+.fg{
+  background: linear-gradient(90deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  margin: 0;
+  padding: 2px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+
+}
+.food-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.food-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+.food-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.food-card h3 {
+  margin: 15px 0 10px;
+}
+.food-card p {
+  font-size: 14px;
+  color: #555;
+}
+.contact-btn {
+  margin-top: 15px;
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.contact-btn:hover {
+  background-color: #218838;
+}
+
+
+.hs{
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+  background-size: 300% 300%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradientAnimation 6s ease infinite;
+  margin-bottom: 10px;
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 2rem;
+}
+.event-icons {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+.event-icons i {
+  margin-right: 0.5rem;
+  color: #333;
+}
+.event-image {
+  max-width: 100%;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.book-btn {
+  margin-top: 1rem;
+}
+
+
+/* Remove the hover rule entirely */
+    .swiper-slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .package-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .modal img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+
+  /* foods */
+  .service-card {
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+
+  .service-card:hover {
+    transform: scale(1.02);
+  }
+
+  .service-icon {
+    font-size: 1.5rem;
+    color: #25D366;
+  }
+
+  .card-body p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+  }
+/* foods */
+
+
+/* matrials s */
+
+#my{
+  color:rgb(154, 160, 156);
+
+}
+.img-fluid rounded shadow{
+  width:200px;
+}
+
+.material-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .material-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .material-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .material-card .card-body {
+    padding: 1rem;
+  }
+
+  .material-icon {
+    font-size: 1.8rem;
+    color: #6c63ff;
+  }
+
+  .section-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+
+/* materials e */

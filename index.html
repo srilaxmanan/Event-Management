@@ -1,0 +1,585 @@
+   
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Eligence Event Management</title>
+  <link rel="icon" href="./img/logo.jpg">
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+     
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
+</head>
+<body>
+
+  <!-- Navbar Start -->
+ <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary shadow-sm sticky-top">
+  <div class="container-fluid px-4">
+    <!-- Logo + Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="./img/logo.jpg" alt="Logo" style="height: 60px; width: auto; border-radius: 10px;">
+      <span class="ms-3 brand-name">Elegance Event Management</span>
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link custom-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="#packages">Packages</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="#food">Food</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="#materials">Materials</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar End -->
+
+
+  
+  
+    
+  
+  <div class="container mt-5 bg-secondary" id="my">
+    <h2 class="text-center hs mb-4">Book Your Event</h2>
+    <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+  
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="./img/1.jpg" alt="Music Fest" class="event-image">
+          <div class="event-icons">
+            <i class="fa-solid fa-calendar-days"></i> Weeding
+            <i class="fa-solid fa-location-dot ms-3"></i> All over india
+          </div>
+          <button class="btn btn-dark book-btn" onclick="bookEvent('Music Fest 2025, June 20, New York')">Book Now</button>
+        </div>
+  
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="./img/b1.jpg" alt="Tech Conference" class="event-image">
+          <div class="event-icons">
+            <i class="fa-solid fa-calendar-days"></i> Birtha day
+            <i class="fa-solid fa-location-dot ms-3"></i> Sylish and Elegance
+          </div>
+          <button class="btn btn-dark book-btn" onclick="bookEvent('Tech Conference, July 15, San Francisco')">Book Now</button>
+        </div>
+  
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="./img/c2.jpg" alt="Art Exhibition" class="event-image">
+          <div class="event-icons">
+            <i class="fa-solid fa-calendar-days"></i> Concert
+            <i class="fa-solid fa-location-dot ms-3"></i> Paris,Fun party's
+          </div>
+          <button class="btn btn-dark book-btn" onclick="bookEvent('Art Exhibition, August 10, Paris')">Book Now</button>
+        </div>
+  
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <img src="./img/di.jpg" alt="Food Carnival" class="event-image">
+          <div class="event-icons">
+            <i class="fa-solid fa-calendar-days"></i> dinning
+            <i class="fa-solid fa-location-dot ms-3"></i> Plecent Packages
+          </div>
+          <button class="btn btn-dark book-btn" onclick="bookEvent('Food Carnival, September 5, Rome')">Book Now</button>
+        </div>
+  
+        <!-- Slide 5 -->
+        <div class="carousel-item">
+          <img src="./img/f.avif" alt="Startup Pitch Day" class="event-image">
+          <div class="event-icons">
+            <i class="fa-solid fa-calendar-days"></i> Food & Cattering
+            <i class="fa-solid fa-location-dot ms-3"></i> Providing a best services
+          </div>
+          <button class="btn btn-dark book-btn" onclick="bookEvent('Startup Pitch Day, October 12, Bangalore')">Book Now</button>
+        </div>
+  
+      </div>
+  
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+  
+<section id="about" class="py-5 bg-light">
+    <div class="container1">
+          <h2 class="mb-3">About Us</h2>
+          <p>
+            Welcome to <strong>Eligance Event Managment</strong>, your trusted partner in crafting unforgettable moments. With years of experience in the event industry, we specialize in delivering seamless and stunning event experiences—from elegant weddings and vibrant birthday parties to professional corporate events and dazzling concerts.
+          </p>
+          <p>
+            Our dedicated team of planners, designers, and coordinators work closely with you to bring your vision to life. We handle every detail with care—venue setup, catering, entertainment, logistics, and décor—ensuring your event is stress-free and spectacular.
+          </p>
+          <p>
+            Whether you're planning a small gathering or a grand celebration, we combine creativity, precision, and passion to make your event truly one of a kind.
+          </p>
+          <p class="mb-0"><strong>Experience the art of celebration—flawlessly executed.</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Booking Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <form class="modal-content" id="bookingForm">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingModalLabel">Book Service</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <input type="hidden" name="service" id="serviceType">
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" required id="name" name="name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" class="form-control" required id="email" name="email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer1">
+        <button type="submit" class="btn btn-primary">Send Booking</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- packages -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Our Packages</h2>
+  
+    <!-- Swiper Slider -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Repeat this slide for each package -->
+        <div class="swiper-slide" onclick="openPackage('Wedding Premium', 'Full decoration, food, and planning.', 'https://via.placeholder.com/600x400?text=Wedding+Premium')">
+          <img src="./img/w.avif" alt="Wedding">
+        </div>
+        <div class="swiper-slide" onclick="openPackage('Birthday Bash', 'Balloon decor, cake table, and games.', 'https://via.placeholder.com/600x400?text=Birthday+Bash')">
+          <img src="./img/b2.avif" alt="Birthday">
+        </div>
+        <div class="swiper-slide" onclick="openPackage('Corporate Elite', 'Stage, lighting, catering.', 'https://via.placeholder.com/600x400?text=Corporate+Elite')">
+          <img src="./img/c2.jpg" alt="Corporate">
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal for Booking -->
+  <div class="container my-5" id="packages">
+  <div class="modal fade" id="packageModal" tabindex="-1" aria-labelledby="packageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" >
+      <form class="modal-content" id="bookingForm">
+        <div class="modal-header">
+          <h5 class="modal-title" id="packageTitle">Package</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img id="packageImage" src="#" alt="Package Image" class="mb-3">
+          <p id="packageDetails"></p>
+  
+          <div class="mb-3">
+            <label for="userName" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="userName" required>
+          </div>
+          <div class="mb-3">
+            <label for="userDate" class="form-label">Event Date</label>
+            <input type="date" class="form-control" id="userDate" required>
+          </div>
+          <div class="mb-3">
+            <label for="userMessage" class="form-label">Additional Message</label>
+            <textarea class="form-control" id="userMessage" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" onclick="sendToWhatsApp()">
+            <i class="fab fa-whatsapp"></i> Book via WhatsApp
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+  <!-- -packages-  -->
+
+
+  <!-- foods start -->
+
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Explore Our Event Services</h2>
+    <div class="row g-4">
+  
+      <!-- Generate 15 service cards -->
+      <!-- Repeat with different content -->
+      <!-- START OF SERVICE ITEM -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card service-card" onclick="bookOnWhatsApp('Wedding Setup')">
+          <img src="./img/1.jpg" class="card-img-top" alt="Wedding Setup">
+          <div class="card-body">
+            <h5 class="card-title">Wedding Setup</h5>
+            <p>Elegant stage, floral décor, and guest seating for your big day.</p>
+            <div class="text-end">
+              <i class="fab fa-whatsapp service-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF SERVICE ITEM -->
+  
+      <!-- Copy/Paste and change content for 14 more services -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card service-card" onclick="bookOnWhatsApp('Birthday Theme')">
+          <img src="./img/b1.jpg" class="card-img-top" alt="Birthday Theme">
+          <div class="card-body">
+            <h5 class="card-title">Birthday Theme</h5>
+            <p>Custom decorations, cakes, and fun themes for kids and adults.</p>
+            <div class="text-end">
+              <i class="fab fa-whatsapp service-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Add 13 more below in same format -->
+  
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card service-card" onclick="bookOnWhatsApp('Corporate Meeting Setup')">
+          <img src="./img/s1.avif" class="card-img-top" alt="Corporate Setup">
+          <div class="card-body">
+            <h5 class="card-title">Corporate Meeting</h5>
+            <p>Projectors, seating, refreshments and audio solutions for your business event.</p>
+            <div class="text-end">
+              <i class="fab fa-whatsapp service-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Continue with more: Catering, DJ Setup, Stage Lighting, Outdoor Events, Photo Booth, Mehndi Night, Reception, Engagement Decor, Haldi Decor, Concert Setup, Festival Stalls, VIP Lounge -->
+  
+    </div>
+  </div>
+  
+<!-- foods close -->
+
+
+<!-- materials start -->
+
+<div class="container py-5" id="materials">
+    <h2 class="section-title">Materials We Use in Event Management</h2>
+    <div class="row g-4">
+  
+      <!-- Material Card -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card material-card">
+          <img src="./img/l1.jpg" class="card-img-top" alt="LED Lights">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-lightbulb material-icon me-2"></i>LED Lights</h5>
+            <p class="card-text">Dynamic lighting setups to transform any venue atmosphere.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Repeat this block with other materials -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card material-card">
+          <img src="./img/fl.avif" class="card-img-top" alt="Flower Decor">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-seedling material-icon me-2"></i>Flower Decor</h5>
+            <p class="card-text">Fresh and artificial floral arrangements for aesthetics.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card material-card">
+          <img src="./img/di1.avif" class="card-img-top" alt="Sound System">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-volume-up material-icon me-2"></i>Sound System</h5>
+            <p class="card-text">High-quality audio equipment for music and announcements.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card material-card">
+          <img src="./img/s2.jpg" class="card-img-top" alt="Stage Setup">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-theater-masks material-icon me-2"></i>Stage Setup</h5>
+            <p class="card-text">Modular stage structures for performances, speeches, or ceremonies.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Add more materials as needed -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card material-card">
+          <img src="./img/s3.avif" class="card-img-top" alt="Seating">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-couch material-icon me-2"></i>Seating Furniture</h5>
+            <p class="card-text">Chairs, sofas, and lounges for comfort and style.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card material-card">
+          <img src="./img/sb.avif" class="card-img-top" alt="Backdrop">
+          <div class="card-body">
+            <h5 class="card-title"><i class="fas fa-image material-icon me-2"></i>Backdrop Designs</h5>
+            <p class="card-text">Custom photo and event backdrops for visual impact.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Add more if you want (DJ, Tents, Dining setup, etc.) -->
+  
+    </div>
+    <div class="container py-5">
+      <h2 class="section-title">Premium Decor & Experiences</h2>
+      <div class="row g-4">
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card material-card">
+            <img src="./img/ca.jpg" class="card-img-top" alt="Chandeliers">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-lightbulb material-icon me-2"></i>Chandeliers</h5>
+              <p class="card-text">Elegant hanging lights for luxury and ambience.</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card material-card">
+            <img src="./img/ph.jpg" class="card-img-top" alt="Photo Booth">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-camera material-icon me-2"></i>Photo Booth</h5>
+              <p class="card-text">Fun photo booth setups with props for guest entertainment.</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card material-card">
+            <img src="./img/fire.jpg" class="card-img-top" alt="Fireworks">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-fire material-icon me-2"></i>Fireworks & Effects</h5>
+              <p class="card-text">Safe and stunning pyrotechnics for weddings and grand entries.</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card material-card">
+            <img src="./img/red.jpg" class="card-img-top" alt="Red Carpet">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-star material-icon me-2"></i>Red Carpet Entry</h5>
+              <p class="card-text">Glamorous entrance with red carpet and backdrop setup.</p>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+  </div>
+  
+  
+
+<!-- materials close -->
+
+<div class="food-section">
+  <div class="food-section" id="food">
+
+    
+  <!-- Division 1 -->
+  <div class="food-card">
+    <img src="./img/a1.jpg" alt="Pizza">
+    <h3>🍽️ 1. Appetizers / Starters
+    </h3>
+    <p>Veg spring rolls, samosas, cheese balls<br>
+
+      Chicken tikka, fish fingers, kebabs<br>
+      
+      Canapés, bruschetta, sliders<br>
+
+      
+      Fruit skewers, paneer tikka
+      
+      </p>
+    <a class="contact-btn" href="tel:7904201971">Contact</a>
+  </div>
+
+  <!-- Division 2 -->
+  <div class="food-card">
+    <img src="./img/a2.jpg" alt="Burger">
+    <h3>🥗 2. Main Course (Buffet or Plated)
+    </h3>
+    <p>Grilled beef patty with melted cheese, lettuce, tomato, and pickles.</p>
+    <a class="contact-btn" href="tel:7904201971">Contact</a>
+  </div>
+
+  
+  <!-- Division 4 -->
+  <div class="food-card">
+    <img src="./img/a3.jpg" alt="Sushi">
+    <h3>🥣 3. Live Counters
+    </h3>
+    <p>Chaat station (pani puri, bhel, dahi puri)<br>
+
+      Pasta counter (white sauce/red sauce)<br>
+      
+      Dosa or paratha station<br>
+      
+      BBQ or tandoori grill<br>
+      
+      Live pizza or sushi counter
+      
+      </p>
+    <a class="contact-btn" href="tel:7904201971">Contact</a>
+  </div>
+
+  <!-- Division 5 -->
+  <div class="food-card">
+    <img src="./img/a4.jpg" alt="Dessert">
+    <h3>🍰 4. Desserts
+    </h3>
+    <p>Gulab jamun, rasgulla, jalebi<br>
+
+      Ice cream station with toppings<br>
+      
+      Cakes, brownies, pastries<br>
+      
+      Kheer, rabri, halwa<br>
+      
+      Chocolate fountain or candy bar
+      
+      </p>
+    <a class="contact-btn" href="tel:7904201971">Contact</a>
+  </div>
+  <div class="food-card mb-3">
+    <img src="./img/a5r.jpg" alt="Dessert">
+    <h3>🥤 5. Beverages
+
+    </h3>
+    <p>Welcome drinks (mocktails, juices, lemonade)
+
+    </p>
+    <a class="contact-btn" href="tel:7904201971">Contact</a>
+  </div>
+  <div class="food-card mb-3">
+    <img src="./img/a6.jpg" alt="Dessert">
+    <h3>🧒 6. Special Options
+
+    </h3>
+    <p>Kids’ menu: mini burgers, nuggets, fries(Etc)
+
+      
+      </p>
+    <a class="contact-btn" href="tel:7904201971">Contact</a>
+  </div>
+</div>
+</div>
+
+
+<!-- Footer Section -->
+  <footer class="bg-dark text-light pt-5 pb-3" id="contact">
+
+    <div class="container">
+      <div class="row">
+  
+        <!-- About -->
+        <div class="col-md-4 mb-4">
+          <h5>About Us</h5>
+          <p>We are a leading event management company delivering memorable experiences through creativity and precision. From weddings to corporate events, we bring your vision to life.</p>
+        </div>
+  
+        <!-- Links -->
+        <div class="col-md-4 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+            <li><a href="#services" class="text-light text-decoration-none">Services</a></li>
+            <li><a href="#packages" class="text-light text-decoration-none">Packages</a></li>
+            <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Form -->
+        <div class="col-md-4 mb-4">
+          <h5>Contact Us</h5>
+          <form id="footerContactForm" class="animate__animated">
+            <div class="mb-2">
+              <input type="text" class="form-control" name="user_name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-2">
+              <input type="email" class="form-control" name="user_email" placeholder="Your Email" required>
+            </div>
+            <div class="mb-2">
+              <textarea class="form-control" name="message" rows="3" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+          <div id="formSuccess" class="mt-2 text-success d-none">Message sent successfully! ✅</div>
+          <div id="formError" class="mt-2 text-danger d-none">Something went wrong. ❌</div>
+        </div>
+      </div>
+  
+      <hr class="text-light">
+      <p class="text-center mb-0">&copy; 2025 Your Event Company. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- EmailJS + Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></script>
+  
+  
+
+
+
+<!-- Bootstrap & EmailJS Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+ 
+</script>
+
+<script src="./index.js" async defer></script>
+
+  <!-- Bootstrap JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
